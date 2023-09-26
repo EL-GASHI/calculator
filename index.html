@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./all.min.css">
+    <link rel="stylesheet" href="./fontawesome.min.css">
+    <link rel="shortcut icon" href="https://friconix.com/png/fi-cnsuxx-division-solid.png" type="image/x-icon">
+    </head>
+<body>
+    <div class="container">
+        <div class="text_container">
+            <img class="imgone" src="./kokotama.jpg" alt="">
+            <h1 class="hiHeader">
+                <span class="hiSpan">
+                    キラリス
+                </span>
+                ココタマ 
+            </h1>
+            <button onclick="scrolltobuttom()"  class="startBtn">Get Started &#128150;</button>
+            <div class="para">
+                <p> Hello my friends &#128587;, I created this cute calculator &#129325; just for fun and it is not a real project &#x1F6AB;. I will leave the source code on my GitHub account. There you will find a detailed explanation &#128195;  of the project in terms of the skills I used to build it. <br> Thank you &#x1F493;. </p>
+            </div>
+            <hr style="width: 85%;  margin-top: 30px; border-top: 1px solid #F78CA2">
+            <div class="socialMedia">
+                <a  href=""><i style="color: #EE9322;" class="fa-brands fa-github"></i> EL-GASHI</a>
+                <a  href=""><i style="color: #713ABE;" class="fa-brands fa-instagram"></i> MAXIMA</a>
+                <a  href=""><i style="color: #6499E9;" class="fa-brands fa-discord"></i> MAXIMA_plus</a>
+            </div>  
+        </div>
+        <div class="calcolator_container" >
+
+            <div class="calcolator">
+                <div class="calcolator_screen">
+                    <h1 id="result"></h1>
+                    <input id="inputMathExpression" type="text"   value="0">
+                </div>
+                <div>
+                    <ul class="cube">
+                        <li onclick="deletAll()" class="style_btn " id="ac_btn">AC</li>
+                        <li onclick="deletOne()" class=" style_btn" id="c_btn">C</li>
+                        <li onclick="onehanderd()" class=" style_btn" id="porsontage_btn">%</li>
+                        <li onclick="btnOperation('/')" class="style_btn " id="division_btn">/</li>
+                    </ul>
+                    <ul class="cube">
+                        <li onclick="btn(this.value)" value=7 class="btn" id="seven_btn">7</li>
+                        <li onclick="btn(this.value)" value=8 class="btn" id="eight_btn">8</li>
+                        <li onclick="btn(this.value)" value=9 class="btn" id="nine_btn">9</li>
+                        <li onclick="btnOperation('*')" class="style_btn" id="multiple_btn">x</li>
+                    </ul>
+                    <ul class="cube">
+                        <li onclick="btn(this.value)" value=4 class="btn" id="four_btn">4</li>
+                        <li onclick="btn(this.value)" value=5 class="btn" id="five_btn">5</li>
+                        <li onclick="btn(this.value)" value=6 class="btn" id="six_btn">6</li>
+                        <li onclick="btnOperation('-')" class="style_btn" id="minus_btn">-</li>
+                    </ul>
+                    <ul class="cube">
+                        <li onclick="btn(this.value)" value=1 class="btn" id="one_btn">1</li>
+                        <li onclick="btn(this.value)"  value=2 class="btn" id="tow_btn">2</li>
+                        <li onclick="btn(this.value)"  value=3 class="btn" id="tree_btn">3</li>
+                        <li onclick="btnOperation('+')" class="style_btn" id="plus_btn">+</li>
+                    </ul>
+                    <ul class="cube">
+                        <li onclick="zeroClick()" value=0 class="btn" id="zero_btn">0</li>
+                        <li onclick="btnOperation('.')" value="" class="btn" id="point_btn">&#128158;</li>
+                        <li onclick="endesult()"  id="equal_btn">=</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./scripte.js"></script>
+</body>
+</html>
